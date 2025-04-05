@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wellness Tracker</h1>
+        
+        <div class="section">
+            <h2>Water Intake</h2>
+            <input type="number" id="water" placeholder="Enter water intake (in L)">
+            <button onclick="trackWater()">Track Water Intake</button>
+            <p id="water-info"></p>
+        </div>
+
+        <div class="section">
+            <h2>Mood Tracker</h2>
+            <select id="mood">
+                <option value="happy">Happy</option>
+                <option value="neutral">Neutral</option>
+                <option value="sad">Sad</option>
+            </select>
+            <button onclick="trackMood()">Track Mood</button>
+            <p id="mood-info"></p>
+        </div>
+
+        <div class="section">
+            <h2>Fitness Goal</h2>
+            <input type="number" id="steps" placeholder="Set daily step goal">
+            <button onclick="setGoal()">Set Goal</button>
+            <p id="goal-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
